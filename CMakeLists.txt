@@ -149,7 +149,7 @@ include_directories("${CMAKE_CURRENT_BINARY_DIR}")
 
 # Targets greeter_[async_](client|server)
 foreach(_target
-  greeter_client greeter_server
+  greeter_client greeter_server greeter_client_1_cert greeter_server_1_cert
   greeter_async_client greeter_async_client2 greeter_async_server)
   add_executable(${_target} "${_target}.cc"
     ${hw_proto_srcs}
